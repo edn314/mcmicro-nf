@@ -22,7 +22,7 @@ file(path_rg).mkdir()
 file(path_drm).mkdirs()   // Also handles the parent path_dr
 
 // Channels for the initial inputs (raw images and illumination profiles)
-raw = Channel.fromPath( "${path_raw}/*.ome.tiff" ).toSortedList()
+raw = Channel.fromPath( "${path_raw}/*.rcpnl" ).toSortedList()
 dfp = Channel.fromPath( "${path_ilp}/*-dfp.tif" ).toSortedList()
 ffp = Channel.fromPath( "${path_ilp}/*-ffp.tif" ).toSortedList()
 
