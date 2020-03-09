@@ -39,7 +39,7 @@ process ashlar {
     file 'stitched.ome.tif' into stitched
 
     """
-    ashlar $raw -m 30 --pyramid -f stitched.ome.tif
+    ashlar $raw -m 35 --pyramid -f stitched.ome.tif
     """
 }
 
